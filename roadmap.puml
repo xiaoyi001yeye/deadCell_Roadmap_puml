@@ -1,0 +1,148 @@
+@startuml
+title 死亡细胞路线图
+'default
+'top to bottom direction
+left to right direction
+
+
+package "最终区域" {
+    rectangle "山巅城堡" as "g1" {
+    }
+
+    rectangle "守望者之墓" as "g2" {
+    }
+
+    rectangle "破碎的大桥" as "g3" {
+    }
+
+    g1 --> g2
+    g1 --> g3
+}
+
+package "第六区域" {
+    rectangle "守望者之墓" as "f1" {
+    }
+
+    rectangle "破碎的大桥" as "f2" {
+    }
+
+    rectangle "山巅城堡" as "f3" {
+    }
+
+    rectangle "山巅城堡" as "f4" {
+    }
+
+    f1 --> f2
+    f1 --> f3
+    f1 --> f4
+}
+
+package "第五区域" {
+    rectangle "黑色大桥" as "e1" {
+    }
+
+    rectangle "山巅城堡" as "e2" {
+    }
+
+    rectangle "守望者之墓" as "e3" {
+    }
+
+    rectangle "破碎的大桥" as "e4" {
+    }
+
+    rectangle "山巅城堡" as "e5" {
+    }
+
+    e1 --> e2
+    e1 --> e3
+    e1 --> e4
+    e1 --> e5
+}
+
+package "第四区域" {
+    rectangle "藏骨堂" as "d1" {
+    }
+
+    rectangle "时钟室" as "d2" {
+    }
+
+    rectangle "王座之间" as "d3" {
+    }
+
+    rectangle "黑色大桥" as "d4" {
+    }
+
+    rectangle "山巅城堡" as "d5" {
+    }
+
+    d1 --> d2
+    d1 --> d3
+    d1 --> d4
+    d1 --> d5
+}
+
+
+package "第三区域" {
+    rectangle "有罪者的大道" as "c1" {
+    }
+
+    rectangle "背弃者沼泽" as "c2" {
+    }
+
+    rectangle "藏骨堂" as "c3" {
+    }
+
+    c1-->c2
+    c1-->c3
+}
+
+package "第二区域" {
+    rectangle "荒废植物园" as "b1" {
+    }
+
+    rectangle "牢房深处" as "b2" {
+    }
+
+    rectangle "背弃者沼泽" as "b3" {
+    }
+
+    rectangle "壁垒" as "b4" {
+    }
+
+    rectangle "腐化牢房" as "b6" {
+    }
+
+    rectangle "旧下水道" as "b7" {
+    }
+
+    b1 --> b2 
+    b1 --> b3
+    b1 --> b4
+    b1 --> b6
+    b1 --> b7
+}
+
+package "起始区域" {
+    rectangle "被囚者的牢笼" as "a1" {
+    }
+
+    rectangle "荒废植物园" as "a2" {
+    }
+
+    rectangle "有罪者的大道" as "a3" {
+    }
+
+    rectangle "猛毒下水道" as "a4" {
+    }
+
+    rectangle "城堡边陲" as "a5" {
+    }
+
+    a1 --> a2 
+    a1 --> a3
+    a1 --> a4
+    a1 --> a5
+}
+
+
+@enduml
